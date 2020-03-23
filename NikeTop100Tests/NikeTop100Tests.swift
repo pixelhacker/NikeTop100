@@ -2,7 +2,7 @@
 //  NikeTop100Tests.swift
 //  NikeTop100Tests
 //
-//  Created by Small Factory Studios on 3/22/20.
+//  Created by Ray Dolber on 3/22/20.
 //  Copyright © 2020 Pixelhacker. All rights reserved.
 //
 
