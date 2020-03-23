@@ -13,6 +13,13 @@
 		26CF17DB2428736A0030359C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26CF17DA2428736A0030359C /* Assets.xcassets */; };
 		26CF17DE2428736A0030359C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CF17DC2428736A0030359C /* LaunchScreen.storyboard */; };
 		26CF17E92428736A0030359C /* NikeTop100Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF17E82428736A0030359C /* NikeTop100Tests.swift */; };
+		26CF17FC2428865D0030359C /* AlbumDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF17FB2428865D0030359C /* AlbumDetailController.swift */; };
+		26CF17FE242886B80030359C /* AppleMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF17FD242886B80030359C /* AppleMusic.swift */; };
+		26CF1800242886E20030359C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF17FF242886E20030359C /* NetworkService.swift */; };
+		26CF1803242887270030359C /* AppleMusicStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF1802242887270030359C /* AppleMusicStrings.swift */; };
+		26CF18052428874F0030359C /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF18042428874F0030359C /* AlbumViewModel.swift */; };
+		26CF1807242887680030359C /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF1806242887680030359C /* AlbumCell.swift */; };
+		26CF1809242887730030359C /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF1808242887730030359C /* BaseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		26CF17E42428736A0030359C /* NikeTop100Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NikeTop100Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CF17E82428736A0030359C /* NikeTop100Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeTop100Tests.swift; sourceTree = "<group>"; };
 		26CF17EA2428736A0030359C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26CF17FB2428865D0030359C /* AlbumDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailController.swift; sourceTree = "<group>"; };
+		26CF17FD242886B80030359C /* AppleMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusic.swift; sourceTree = "<group>"; };
+		26CF17FF242886E20030359C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		26CF1802242887270030359C /* AppleMusicStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicStrings.swift; sourceTree = "<group>"; };
+		26CF18042428874F0030359C /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		26CF1806242887680030359C /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		26CF1808242887730030359C /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +97,7 @@
 				26CF17F62428743E0030359C /* Networking */,
 				26CF17F7242874450030359C /* Resources */,
 				26CF17F82428744A0030359C /* Supporting Files */,
+				26CF1801242887090030359C /* Utilities */,
 				26CF17F9242874540030359C /* View Models */,
 				26CF17FA2428745F0030359C /* Views */,
 			);
@@ -111,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				26CF17D5242873660030359C /* AlbumsController.swift */,
+				26CF17FB2428865D0030359C /* AlbumDetailController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,6 +134,7 @@
 		26CF17F5242874380030359C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				26CF17FD242886B80030359C /* AppleMusic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -125,6 +142,7 @@
 		26CF17F62428743E0030359C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				26CF17FF242886E20030359C /* NetworkService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -149,6 +167,7 @@
 		26CF17F9242874540030359C /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				26CF18042428874F0030359C /* AlbumViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -156,8 +175,18 @@
 		26CF17FA2428745F0030359C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				26CF1806242887680030359C /* AlbumCell.swift */,
+				26CF1808242887730030359C /* BaseButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		26CF1801242887090030359C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				26CF1802242887270030359C /* AppleMusicStrings.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +291,14 @@
 			files = (
 				26CF17D6242873660030359C /* AlbumsController.swift in Sources */,
 				26CF17D2242873660030359C /* AppDelegate.swift in Sources */,
+				26CF17FC2428865D0030359C /* AlbumDetailController.swift in Sources */,
 				26CF17D4242873660030359C /* SceneDelegate.swift in Sources */,
+				26CF18052428874F0030359C /* AlbumViewModel.swift in Sources */,
+				26CF1800242886E20030359C /* NetworkService.swift in Sources */,
+				26CF1809242887730030359C /* BaseButton.swift in Sources */,
+				26CF1803242887270030359C /* AppleMusicStrings.swift in Sources */,
+				26CF17FE242886B80030359C /* AppleMusic.swift in Sources */,
+				26CF1807242887680030359C /* AlbumCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
