@@ -39,7 +39,7 @@ class AlbumsController: UITableViewController {
 	}
 	
 	private func fetchData() {
-		// TODO: - what to do if we are loading 20,000 albums?
+		//TODO: given more time I would implement UITableViewDataSourcePrefetching
 		activityIndicator.startAnimating()
         NetworkingService.shared.fetchAlbums(totalAlbums: 100) { (albums, err) in
             if let err = err {

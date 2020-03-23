@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  NikeTop100
+
+  Created by Ray Dolber on 3/22/20.
+  Copyright © 2020 Pixelhacker. All rights reserved.
+*/
+
+/* Album Detail Button*/
+"top100.albumDetail.button" = "Page d'album";
+
+/* Genre Label */
+"top100.albumDetail.genreHeader" = "Genre : ";
+
+/* Release Date Header */
+"top100.albumDetail.releaseDateHeader" = "Date de sortie : ";
+
+/* Album Navigation Title */
+"top100.album.navigationTitle" = "DISQUES";
