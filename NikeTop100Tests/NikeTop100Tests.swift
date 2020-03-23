@@ -12,23 +12,31 @@ import XCTest
 class NikeTop100Tests: XCTestCase {
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+	
+	func testFetch100Albums() {
+		NetworkingService.shared.fetchAlbums(totalAlbums: 100) { (albums, _) in
+			XCTAssertTrue(albums?.count == 100)
+		}
+	}
+	
+	func testFetch50Albums() {
+		NetworkingService.shared.fetchAlbums(totalAlbums: 50) { (albums, _) in
+			XCTAssertTrue(albums?.count == 50)
+		}
+	}
+	
+	func testDateFormatterConvertsCorrectly() {
+		let popGenre = Genre(name: "Pop")
+		let album = Album(artistName: "", artworkUrl100: "", copyright: "", genres: [popGenre], name: "", releaseDate: "2020-03-23", url: "")
+		let albumVM = AlbumViewModel(album: album)
+		
+		let date = albumVM.releaseDate
+		let expectedDate = "Mar 23, 2020"
+		
+		XCTAssertEqual(date, expectedDate)
+	}
 }
