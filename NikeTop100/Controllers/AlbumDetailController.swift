@@ -205,14 +205,12 @@ class AlbumDetailController: UIViewController {
 	}
 	
 	@objc func showAlbumScreen() {
-		//TODO: Fix this
-        if let url = URL(string: albumVM.iTunesUrl) {
+		guard let url = URL(string: albumVM.iTunesUrl) else { return }
+		
+		if UIApplication.shared.canOpenURL(url) {
 			UIApplication.shared.open(url, options: [:], completionHandler: nil)
-			//UIApplication.shared.open(url, options: [:])
-        } else {
-            //print("Can't open URL on Simulator")
-        }
-    }
+		}
+	}
     
     // MARK: - UI
     
